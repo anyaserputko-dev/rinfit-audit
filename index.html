@@ -382,6 +382,16 @@ a.irow:hover b{text-decoration:underline}
 .m-pc s{color:#a9a29d}
 .m-flag{position:absolute;top:.3em;left:.3em;font-size:.48em;background:#373a36;color:#fff;border-radius:2em;padding:.3em .6em}
 .m-flag.sale{background:#8a5a44}
+.tryon-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1.15fr);gap:28px;align-items:start}
+.tryon-grid .tcol .lbl{margin-bottom:10px}
+.tryon-grid .txt{margin-bottom:14px}
+.phonecol .phone{max-width:300px;margin:0 auto}
+.phone.live .screen{background:#e9e4e1}
+.liveframe{width:100%;height:100%;border:0;display:block;background:#e9e4e1}
+.livelink{display:block;text-align:center;margin-top:10px;font:700 12px/1 'Montserrat',sans-serif;letter-spacing:.04em;color:#262626;border:1.5px solid #4a4a4a;border-radius:30px;padding:10px 14px;text-decoration:none;background:rgba(255,255,255,.6)}
+.livelink:hover{background:#fff}
+@media (max-width:1100px){.tryon-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.phonecol{grid-column:1 / -1}}
+@media (max-width:640px){.tryon-grid{grid-template-columns:minmax(0,1fr)}}
 .imgcard img{width:100%;border-radius:8px;display:block}
 .imgcard .cap2{font-size:12px;color:#777;margin-top:8px;line-height:1.4}
 .fine-note{font-size:12.5px!important;color:#777!important}
@@ -882,13 +892,28 @@ a.irow:hover b{text-decoration:underline}
 <section class="slide" id="tryon">
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><span class="num">30</span><h2><span class="sev extra">Пропозиція</span>Віртуальна примірка каблучки на сайті</h2></div>
-  <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Головне вагання покупця — <b>чи підійде розмір і як це виглядатиме на руці</b>. Зараз на це відповідають калькулятор розміру, фото на руці й відгуки з фотографіями — але приміряти каблучку неможливо.</p><p>Саме через розмір люди пишуть у підтримку й роблять обміни.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз на сторінці товару</h4><div class="row"><span>Калькулятор розміру</span><em class="ok">є ✓</em></div><div class="row"><span>Фото каблучки на руці</span><em class="ok">є ✓</em></div><div class="row"><span>Відео товару</span><em class="ok">є ✓</em></div><div class="row"><span>Примірка на своїй руці</span><em class="bad">немає</em></div></div></div>
-    <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p><b>Примірка через камеру телефона</b> прямо на сторінці товару: людина наводить камеру на руку й бачить обрану каблучку у своєму кольорі та розмірі.</p><p>Ми вже зібрали робочий прототип: усі 12 каблучок змодельовані за їхніми ж сторінками — ширина й товщина ободка, форма й розмір каменя, оправа. Ліворуч на картинці — фото Rinfit, праворуч — наша модель.</p><p class="fine-note">Живий прототип: <a href="https://anyaserputko-dev.github.io/rinfit-try-on/" target="_blank">anyaserputko-dev.github.io/rinfit-try-on</a></p></div>
-    <div class="v2"><div class="viz imgcard"><h4>Фото Rinfit · наша 3D-модель</h4><img src="img/tryon-compare.jpg" alt=""><div class="cap2">Ліворуч — товарне фото rinfit.com, праворуч — наш рендер тієї самої каблучки</div></div></div>
-    <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
-      <div class="card"><p>Покупець приміряє каблучку до покупки — менше обмінів через розмір, більше часу на сторінці й готовий матеріал для TikTok, де в бренду вже є аудиторія.</p><div class="stats"><div><b>12 каблучок</b><span>уже змодельовано</span></div><div><b>на пристрої</b><span>камера нікуди не передається</span></div></div></div><div class="ptag"><span>Вартість</span><b>Окремо</b><em>обсяг і ціну узгоджуємо після демо</em></div></div>
+  <div class="tryon-grid">
+    <div class="tcol">
+      <div class="lbl"><span class="pill">Зараз</span></div>
+      <div class="txt"><p>Головне вагання покупця — <b>чи підійде розмір і як це виглядатиме на руці</b>. Зараз на це відповідають калькулятор розміру, фото на руці й відгуки з фотографіями — але приміряти каблучку неможливо.</p><p>Саме через розмір люди пишуть у підтримку й роблять обміни.</p></div>
+      <div class="viz"><h4>Зараз на сторінці товару</h4><div class="row"><span>Калькулятор розміру</span><em class="ok">є ✓</em></div><div class="row"><span>Фото каблучки на руці</span><em class="ok">є ✓</em></div><div class="row"><span>Відео товару</span><em class="ok">є ✓</em></div><div class="row"><span>Примірка на своїй руці</span><em class="bad">немає</em></div></div>
+    </div>
+    <div class="tcol phonecol">
+      <div class="lbl"><span class="pill">Пропонуємо</span></div>
+      <div class="txt"><p><b>Примірка через камеру телефона</b> прямо на сторінці товару: людина наводить камеру на руку й бачить обрану каблучку у своєму кольорі та розмірі.</p></div>
+      <div class="phone live"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div>
+        <div class="view"><iframe class="liveframe" src="https://anyaserputko-dev.github.io/rinfit-try-on/" title="Rinfit — віртуальна примірка" allow="camera; accelerometer; gyroscope; xr-spatial-tracking" loading="lazy"></iframe></div>
+        <div class="url"><span>rinfit.com</span></div></div></div>
+      <div class="cap">Це живий прототип просто в документі. Оберіть каблучку, натисніть «Live try-on» і дозвольте камеру.</div>
+      <a class="livelink" href="https://anyaserputko-dev.github.io/rinfit-try-on/" target="_blank" rel="noopener">Відкрити на весь екран ↗</a>
+    </div>
+    <div class="tcol">
+      <div class="viz imgcard"><h4>Фото Rinfit · наша 3D-модель</h4><img src="img/tryon-compare.jpg" alt=""><div class="cap2">Ліворуч — товарне фото rinfit.com, праворуч — наш рендер тієї самої каблучки. Усі 12 каблучок змодельовані за їхніми ж сторінками: ширина й товщина ободка, форма й розмір каменя, оправа.</div></div>
+      <div class="benefit-top" style="margin-top:18px"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
+      <div class="card"><p>Покупець приміряє каблучку до покупки — менше обмінів через розмір, більше часу на сторінці й готовий матеріал для TikTok, де в бренду вже є аудиторія.</p>
+        <div class="stats"><div><b>12 каблучок</b><span>уже змодельовано</span></div><div><b>на пристрої</b><span>камера нікуди не передається</span></div></div></div>
+      <div class="ptag"><span>Вартість</span><b>Окремо</b><em>обсяг і ціну узгоджуємо після демо</em></div>
+    </div>
   </div>
 </section>
 <!-- ============ GOOD ============ -->
@@ -936,7 +961,7 @@ a.irow:hover b{text-decoration:underline}
     <div class="pbox alt">
       <span class="pill">Окремо: примірка каблучки</span>
       <div class="sum">Демо</div>
-      <p>Примірка через камеру прямо на сторінці товару. Прототип із 12 змодельованими каблучками вже працює — обсяг і вартість узгоджуємо після демонстрації.</p>
+      <p>Примірка через камеру прямо на сторінці товару. Прототип із 12 змодельованими каблучками вбудований у цей документ — його можна спробувати на слайді 30. Обсяг і вартість узгоджуємо після демонстрації.</p>
       <div class="terms"><span>12 каблучок змодельовано</span><span>Працює на пристрої покупця</span></div>
     </div>
     </div>
