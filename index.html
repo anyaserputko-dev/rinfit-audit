@@ -376,12 +376,49 @@ a.irow:hover b{text-decoration:underline}
 .m-bubble{position:absolute;right:1em;bottom:1em;width:2.4em;height:2.4em;border-radius:50%;background:#373a36;color:#fff;display:grid;place-items:center;font-size:1em}
 .m-cards{display:grid;grid-template-columns:1fr 1fr;gap:.5em}
 .m-pc{border:1px solid #eee;border-radius:.6em;padding:.45em}
-.m-pc-img{position:relative;height:4.2em;border-radius:.4em;background:linear-gradient(135deg,#efeae7,#ded6d1);margin-bottom:.35em}
+.m-pc-img{position:relative;height:5.6em;border-radius:.4em;background:linear-gradient(135deg,#efeae7,#ded6d1);margin-bottom:.35em}
 .m-pc b{display:block;font-size:.6em;line-height:1.2}
 .m-pc span{display:block;font-size:.54em;color:#6b6e69}
 .m-pc s{color:#a9a29d}
 .m-flag{position:absolute;top:.3em;left:.3em;font-size:.48em;background:#373a36;color:#fff;border-radius:2em;padding:.3em .6em}
 .m-flag.sale{background:#8a5a44}
+.m-flag.new{background:#4d6a86}
+.m-price-rf{display:block;font-size:.58em;font-weight:600;color:#373a36;margin-top:.15em}
+.m-pc .m-sw{margin-top:.3em}
+.m-pc .m-sw i{width:.85em;height:.85em}
+.tryon-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px minmax(0,1.15fr);gap:28px;align-items:start}
+.tryon-grid .tcol .lbl{margin-bottom:10px}
+.tryon-grid .txt{margin-bottom:14px}
+.phonecol .phone{max-width:300px;margin:0 auto}
+.phone.live .screen{background:#e9e4e1}
+.liveframe{width:100%;height:100%;border:0;display:block;background:#e9e4e1}
+.livelink{display:block;text-align:center;margin-top:10px;font:700 12px/1 'Montserrat',sans-serif;letter-spacing:.04em;color:#262626;border:1.5px solid #4a4a4a;border-radius:30px;padding:10px 14px;text-decoration:none;background:rgba(255,255,255,.6)}
+.livelink:hover{background:#fff}
+@media (max-width:1100px){.tryon-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.phonecol{grid-column:1 / -1}}
+@media (max-width:640px){.tryon-grid{grid-template-columns:minmax(0,1fr)}}
+.ov-tab{position:absolute;left:3cqw;bottom:15cqw;background:#373a36;color:#fff;border-radius:2em;padding:2.4cqw 4.5cqw;font:700 4cqw/1 'Montserrat',sans-serif;box-shadow:0 1cqw 2cqw rgba(0,0,0,.25)}
+.ov-note{position:absolute;left:0;right:0;bottom:0;background:rgba(255,255,255,.94);border-top:1px solid #e6e1dd;color:#8a5a44;text-align:center;padding:2.6cqw 2cqw;font:600 3.6cqw/1.3 'Montserrat',sans-serif}
+.ov-reserve{position:absolute;left:4cqw;right:4cqw;top:52cqw;height:58cqw;border:2px dashed #2E8B57;border-radius:3cqw;background:rgba(255,255,255,.88);display:flex;align-items:center;justify-content:center;text-align:center;padding:0 5cqw;color:#1f5f3b;font:600 4cqw/1.35 'Montserrat',sans-serif}
+.ov-ok{position:absolute;right:4cqw;bottom:26cqw;background:#E7F3EC;color:#1f5f3b;border:1px solid #2E8B57;border-radius:2em;padding:2.2cqw 4cqw;font:700 3.6cqw/1 'Montserrat',sans-serif}
+
+.m-tap{display:flex;align-items:center;gap:.6em;border:1px dashed #2E8B57;border-radius:.5em;padding:.6em;margin-bottom:.5em;font-size:.58em;color:#1f5f3b}
+.m-tap i{width:2.2em;height:2.2em;border-radius:.4em;background:#E7F3EC;display:block;flex:none}
+.m-crumb-rf{font-size:.58em;color:#6b6e69;margin-bottom:.5em}
+.m-crumb-rf b{font-weight:400;color:#b3ada8}
+.m-sticky-rf{position:absolute;left:.5em;right:.5em;bottom:.5em;display:flex;align-items:center;justify-content:space-between;gap:.5em;background:#373a36;color:#fff;border-radius:.6em;padding:.6em .7em;font-size:4.7cqw}
+.m-sticky-rf span{font-size:.7em;font-weight:600}
+.m-sticky-rf a{background:#fff;color:#373a36;border-radius:.4em;padding:.5em .9em;font-size:.6em;font-weight:700}
+.m-ann-rf{background:#f3e7e3;color:#7a4b3a;text-align:center;font-size:.6em;padding:.6em}
+.m-ann-rf.soft{opacity:.45}
+.m-check-rf{display:flex;gap:.5em;align-items:center;font-size:.56em;color:#6b6e69;margin:.2em 0 .6em}
+.m-check-rf i{width:1em;height:1em;border:1px solid #373a36;border-radius:.2em;display:block;flex:none}
+.m-rate{text-align:center;font-size:.68em;color:#8a5a44;margin-bottom:.6em}
+.m-proof-rf{display:block;font-size:.54em;color:#8a5a44;margin-top:.3em}
+.m-sizes{display:flex;gap:.4em;margin:.5em 0}
+.m-sizes span{flex:1;text-align:center;border:1px solid #cfc7c2;border-radius:50%;padding:.55em 0;font-size:.62em}
+.m-sizes span.on{background:#373a36;color:#fff;border-color:#373a36}
+.m-social{display:flex;flex-wrap:wrap;gap:.35em;margin-bottom:.5em}
+.m-social span{font-size:.54em;border:1px solid #ddd;border-radius:2em;padding:.45em .7em}
 .imgcard img{width:100%;border-radius:8px;display:block}
 .imgcard .cap2{font-size:12px;color:#777;margin-top:8px;line-height:1.4}
 .fine-note{font-size:12.5px!important;color:#777!important}
@@ -402,7 +439,6 @@ a.irow:hover b{text-decoration:underline}
   <p class="meta">Вересень 2026 · Shopify · desktop + мобільний · 15 блоків аудиту</p>
   <nav class="toc">
     <a href="#summary">Коротко</a>
-    <a href="#top3">Три головні зміни</a>
     <a href="#critical">6 критичних</a>
     <a href="#medium">13 середніх</a>
     <a href="#low">10 дрібних</a>
@@ -416,32 +452,22 @@ a.irow:hover b{text-decoration:underline}
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><h2>Коротко про головне</h2></div>
   <p class="lead">З боку мерчандайзингу Rinfit — <b>один із найсильніших Shopify-магазинів, які ми аудитували</b>. Те, що більшість робить погано, тут уже зроблено правильно: чудовий пошук із підказками, картки з рейтингом і кольорами, швидка покупка у вікні, 745 відгуків із фото, стіна відео покупців, липка кнопка покупки і на компʼютері, і на телефоні.</p>
-  <p class="lead" style="margin-top:-14px"><b>Що ми помітили.</b> Банер на головній — це GIF на 1,6 МБ, і сторінка на телефоні відкривається 8,7 секунди. На сторінці товару блоки трохи зʼїжджають, поки довантажуються відгуки. А вікно зі знижкою зʼявляється одразу, ще до того, як людина побачила перші каблучки.</p>
-  <p class="lead" style="margin-top:-14px"><b>Що пропонуємо.</b> Замінити банер на легшу картинку, зарезервувати місце під відгуки й показувати вікно трохи пізніше. Це не редизайн: робіт першої черги шість, і перша з них — заміна одного файлу.</p>
+  <p class="lead" style="margin-top:-14px"><b>Що ми помітили.</b> Швидкість у вас уже в нормі: за даними реальних відвідувачів за 30 днів сторінка показується за 1,5 секунди, а макет не стрибає. Тому ми дивилися на інше — на дрібниці, які заважають людині дійти до кошика: вікно зі знижкою зʼявляється ще до першої каблучки, на картках товару немає жодної позначки, на телефоні дрібний текст та іконки, а після покупки магазин не нагадує про себе листом.</p>
+  <p class="lead" style="margin-top:-14px"><b>Що пропонуємо.</b> 29 робіт, які не чіпають ні дизайн, ні товар: перенести вікно, підписати картки, збільшити дрібні елементи, додати листи після покупки й підказку про розмір. Плюс окремо — віртуальна примірка каблучки, яку ви можете спробувати просто в цьому документі.</p>
   <div class="kpis">
-    <div class="kpi"><b class="bad">8</b><span>Критичних знахідок</span></div>
-    <div class="kpi"><b class="warn">32</b><span>Зауважень</span></div>
+    <div class="kpi"><b>29</b><span>Робіт у пропозиції</span></div>
     <div class="kpi"><b class="ok">72</b><span>Зроблено добре</span></div>
-    <div class="kpi"><b class="bad">8,7 с</b><span>Завантаження на телефоні</span></div>
-    <div class="kpi"><b class="bad">40/100</b><span>Швидкість головної</span></div>
+    <div class="kpi"><b class="ok">1,5 с</b><span>Швидкість зараз — у нормі</span></div>
+    <div class="kpi"><b class="bad">0,672</b><span>Зсув на сторінці товару</span></div>
+    <div class="kpi"><b>745</b><span>Відгуків із фото</span></div>
   </div>
 </section>
 
-<!-- ============ TOP 3 ============ -->
-<section class="slide" id="top3">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>Три зміни, які дадуть найбільше<small>Усі три — про швидкість і перше враження, а не про товар</small></h2></div>
-  <div class="crit-grid">
-    <a class="ccard" href="#p01"><div class="top"><span class="n">1</span><span class="go">слайди 01–02 ↓</span></div><b>Замінити GIF-банер і зібрати його текст у HTML</b><p class="now">Один файл на 1,6 МБ тягне завантаження до 8,7 с, а весь текст банера — пікселі всередині картинки.</p><p class="do">WebP/AVIF + справжні заголовок і кнопка. <b>11 год · $440</b></p></a>
-    <a class="ccard" href="#p04"><div class="top"><span class="n">2</span><span class="go">слайд 04 ↓</span></div><b>Прибрати стрибок сторінки товару</b><p class="now">Зсув макета 0,672 — усемеро гірше за норму: блок їде вниз, коли людина тягнеться до розміру.</p><p class="do">зарезервувати висоту під відгуки. <b>5 год · $200</b></p></a>
-    <a class="ccard" href="#p05"><div class="top"><span class="n">3</span><span class="go">слайд 05 ↓</span></div><b>Перенести спливаюче вікно</b><p class="now">Вікно закриває банер одразу на першому візиті — це перше, що бачить людина з реклами.</p><p class="do">показ на виході або після 30 секунд. <b>3 год · $120</b></p></a>
-  </div>
-</section>
 
 <section class="slide divider" id="critical">
   <img class="silk" src="img/silk.png" alt="">
   <span class="sev crit">Критично</span>
-  <h2>6 критичних<br>робіт</h2>
+  <h2>6 критичні<br>роботи</h2>
 </section>
 
 <section class="slide" id="p01">
@@ -449,9 +475,17 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">01</span><h2><span class="sev crit">Критично</span>Головний банер — GIF на 1,6 МБ</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Банер на головній віддається як <b>анімований GIF: 1 613 КБ</b> (7,4 МБ у джерелі). Це найбільший файл сторінки і саме він — той елемент, за яким Google міряє швидкість.</p><p>Через нього завантаження на телефоні — <b>8,7 с</b> замість цільових 2,5 с. GIF не стискається, бо зберігає кожен кадр окремо.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Головний банер зараз</h4><img src="img/desk-hero.jpg" alt=""><div class="cap2">Banner-Desktop-29.gif · 1 613 КБ</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-home.jpg" alt="Перший екран із важким банером"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Банер — 1,6 МБ GIF</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Замінити на <b>WebP/AVIF</b> зі скороченим <code>srcset</code> під різні екрани — або на стиснене MP4/WebM, якщо рух важливий. Це ~100–200 КБ замість 1,6 МБ.</p></div>
-    <div class="v2"><div class="viz"><h4>Після заміни</h4><div class="row"><span>Вага банера</span><em class="ok">~0,2 МБ</em></div><div class="row"><span>Формат</span><em class="ok">WebP / AVIF або MP4</em></div><div class="row"><span>LCP на телефоні</span><em class="ok">ціль < 2,5 с</em></div><div class="tags"><span>−90% на найважчому файлі</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-hero-rf short">
+        <h3>Thin Band Collection</h3>
+        <span class="m-btn dark">Shop the collection</span>
+      </div>
+      <div class="m-pad col grow">
+        <div class="m-note-rf">Банер — WebP ~0,2 МБ замість 1,6 МБ</div>
+        <div class="m-cards"><div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv1.jpg);background-size:cover"></div><b>Emerald Cut CZ</b><span>★ 5.0 (746) · $49.99</span></div>
+        <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv3.jpg);background-size:cover"></div><b>Oval Cut CZ</b><span>★ 5.0 (289) · $49.99</span></div></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Магазин відкривається швидко там, звідки йде більшість трафіку — з телефона. Зараз найдорожчий екран найдовше й вантажиться.</p><div class="stats"><div><b>1,6 МБ → ~0,2 МБ</b><span>вага головного банера</span></div><div><b>8,7 → 2,5 с</b><span>ціль завантаження</span></div></div></div><div class="ptag"><span>Вартість</span><b>$240</b><em>6 год роботи · $40/год</em></div></div>
   </div>
@@ -462,7 +496,7 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">02</span><h2><span class="sev crit">Критично</span>Увесь текст банера «вшитий» у картинку</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Ми виміряли: у секції банера <b>0 символів тексту</b>. «ThinBand», опис і навіть кнопка SHOP NOW — це пікселі всередині GIF, а <code>alt</code> у картинки порожній.</p><p>Тож Google не читає заголовка, зчитувачі екрана мовчать, текст не переноситься на вузькому екрані, а «кнопка» — це просто посилання на всю картинку.</p></div>
-    <div class="v1"><div class="viz"><h4>Банер зараз</h4><div class="row"><span>Текст у HTML</span><em class="bad">0 символів</em></div><div class="row"><span>alt у картинки</span><em class="bad">порожній</em></div><div class="row"><span>CTA</span><em class="bad">не кнопка, а вся картинка</em></div><div class="row"><span>Автопрокрутка</span><em class="warn">кожні 7 с</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-home.jpg" alt="Текст банера — це пікселі всередині картинки"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Заголовок і кнопка вшиті у фото</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Зібрати банер як <b>картинка + справжні заголовок, підзаголовок і кнопка</b> у HTML. Автопрокрутку вимкнути, лишити один сильний банер.</p><p>І сказати головне: <b>чому силіконова каблучка</b> — для спортзалу, лікарень, роботи руками, набряклих пальців.</p></div>
     <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-hero-rf">
         <h3>Silicone rings — designed for real life</h3>
@@ -481,9 +515,18 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">03</span><h2><span class="sev crit">Критично</span>418 запитів і 162 JS-файли з 27 доменів</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>На головній ми нарахували <b>418 мережевих запитів, 162 JS-файли</b> і ресурси з <b>27 сторонніх доменів</b>: Loox, CodeBlackBelt, Clarity, Privy, Meta, GTM, Google Ads, DoubleClick, Pinterest, jsDelivr, Google Fonts.</p><p>Саме через це браузер «зайнятий» 1 060 мс на телефоні і 1 680 мс на компʼютері: сторінка виглядає готовою, але не реагує на дотик.</p></div>
-    <div class="v1"><div class="viz"><h4>Заміряно в браузері</h4><div class="row"><span>Запитів на сторінку</span><em class="bad">418</em></div><div class="row"><span>JS-файлів</span><em class="bad">162</em></div><div class="row"><span>Сторонніх доменів</span><em class="bad">27</em></div><div class="row"><span>Не реагує на дотик</span><em class="bad">1 060 мс</em></div><div class="row"><span>На компʼютері</span><em class="bad">1 680 мс</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-home.jpg" alt="Головна сторінка на телефоні"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Браузер зайнятий 1 060 мс</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p><b>Ревізія застосунків:</b> прибрати те, що не використовується, решту відкласти на «після показу», шрифти віддавати зі свого домену.</p></div>
-    <div class="v2"><div class="viz"><h4>Ціль</h4><div class="row"><span>Не реагує на дотик</span><em class="ok">< 200 мс</em></div><div class="row"><span>Сторонні скрипти</span><em class="ok">лише потрібні</em></div><div class="row"><span>Шрифти</span><em class="ok">зі свого домену</em></div><div class="tags"><span>другий за вагою виграш після банера</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-hero-rf short">
+        <h3>Silicone rings — designed for real life</h3>
+        <span class="m-btn dark">Shop bestsellers</span>
+      </div>
+      <div class="m-pad col grow">
+        <div class="m-tap"><i></i><span>Сторінка відповідає на дотик одразу</span></div>
+        <div class="m-cards"><div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv2.jpg);background-size:cover"></div><b>Halo Emerald</b><span>★ 5.0 (23) · $59.99</span></div>
+        <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv4.jpg);background-size:cover"></div><b>Princess Cut CZ</b><span>★ 5.0 (117) · $49.99</span></div></div>
+        <div class="m-note-rf">Зайві скрипти відкладені, шрифти — зі свого домену</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Магазин починає реагувати на дотик одразу. Зараз частина натискань просто губиться — і для покупця це виглядає як зламаний сайт.</p><div class="stats"><div><b>418 запитів</b><span>на одну сторінку</span></div><div><b>1 060 → 200 мс</b><span>ціль часу без реакції</span></div></div></div><div class="ptag"><span>Вартість</span><b>$480</b><em>12 год роботи · $40/год</em></div></div>
   </div>
@@ -496,7 +539,19 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Google міряє зсув макета на сторінці товару як <b>0,672</b> проти норми 0,1 — це майже <b>всемеро гірше</b>.</p><p>Причину ми відтворили: стіна відгуків Loox довантажується пізніше й розсуває контент. Людина тягнеться до розміру — а блок їде вниз, і палець влучає не туди.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-product.jpg" alt="Сторінка товару: відгуки довантажуються й зсувають контент"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Сторінка товару на телефоні</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p><b>Зарезервувати висоту</b> під віджет відгуків і під усе, що вантажиться пізніше. Тоді нічого не стрибає, і оцінка швидкості сторінки товару підростає сама.</p></div>
-    <div class="v2"><div class="viz"><h4>Ціль</h4><div class="row"><span>Зсув макета (CLS)</span><em class="ok">0,672 → < 0,1</em></div><div class="row"><span>Промахи по кнопці розміру</span><em class="ok">зникають</em></div><div class="row"><span>PageSpeed товару</span><em class="ok">29/100 → вище</em></div><div class="tags"><span>на головній CLS уже 0,024 — проблема лише тут</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-title">Silicone Ring — 10×8 mm Emerald Cut CZ</div>
+        <div class="m-price-rf" style="font-size:.8em">$49.99</div>
+        <div class="m-sizes"><span>4</span><span>5</span><span class="on">6</span><span>7</span><span>8</span></div>
+        <span class="m-btn dark">Add to cart</span>
+        <div class="m-rate" style="margin-top:.7em">★★★★★ <b>5.0</b> · 745 reviews</div>
+        <div class="m-cards">
+          <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv1.jpg);background-size:cover;background-position:center"></div><b>Lauren T.</b><span>★★★★★ · Teal Ocean / 5</span><span>“Really beautiful. Most comfortable ring I’ve ever put on.”</span></div>
+          <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv2.jpg);background-size:cover;background-position:center"></div><b>Kastery B.</b><span>★★★★★ · Nude and Rose Gold / 6</span><span>“Perfect for vacations — buying another color.”</span></div>
+          <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv3.jpg);background-size:cover;background-position:center"></div><b>Kelly C.</b><span>★★★★★ · White and Silver / 7</span><span>“Wear it at the gym every day.”</span></div>
+          <div class="m-pc"><div class="m-pc-img" style="background-image:url(img/rv4.jpg);background-size:cover;background-position:center"></div><b>Christina M.</b><span>★★★★★ · Pink and Rose Gold / 7</span><span>“Muy hermoso, me gustó mucho.”</span></div>
+        </div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Так виглядатиме сторінка товару</div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Покупець обирає розмір і колір, не борючись зі сторінкою. Саме на цьому кроці найбільше зривів — і найдорожчих, бо людина вже готова купити.</p><div class="stats"><div><b>0,672 → 0,1</b><span>зсув макета</span></div><div><b>7×</b><span>гірше за норму зараз</span></div></div></div><div class="ptag"><span>Вартість</span><b>$200</b><em>5 год роботи · $40/год</em></div></div>
   </div>
@@ -509,12 +564,7 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>На чистій сесії вікно Privy виринає <b>миттєво</b> й закриває банер із єдиною кнопкою — ще до того, як людина побачила хоч одну каблучку. Ми відтворили це двічі.</p><p>Текст ще й плутає: заголовок каже «CHECK OUT NOW & GET 10% OFF», а форма просить email. У футері та сама знижка описана інакше — «додайте каблучку в кошик».</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-popup.jpg" alt="Спливаюче вікно поверх банера на першому екрані"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Перший екран на телефоні</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Перенести показ на <b>намір піти</b> (на компʼютері) або на 20–30 секунд чи 40% прокрутки. Текст переписати під дію: «Отримайте 10% на перше замовлення». Умову знижки зробити однаковою у вікні та футері.</p></div>
-    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-hero-rf">
-        <h3>Silicone rings — designed for real life</h3>
-        <span class="m-btn dark">Shop bestsellers</span>
-      </div>
-      <div class="m-pad"><div class="m-card rfc"><b>Get 10% off your first order</b><p>Enter your email — the code arrives instantly.</p><div class="m-field rf">Email</div><span class="m-btn dark">Get my code</span></div>
-      <div class="m-note-rf">Показуємо на виході або після 30 секунд</div></div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-home.jpg" alt="Перший екран без спливаючого вікна"><span class="ov-tab">GET 10% OFF</span><span class="ov-note">вікно — на виході або після 30 секунд</span></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Той самий екран після правки</div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Перше, що бачить людина з реклами, — каблучки, а не вимога залишити пошту. Знижка нікуди не дівається: вкладка «10% off» лишається внизу екрана.</p><div class="stats"><div><b>0 → 30 с</b><span>коли зʼявляється вікно</span></div><div><b>1 умова</b><span>знижки всюди однакова</span></div></div></div><div class="ptag"><span>Вартість</span><b>$120</b><em>3 год роботи · $40/год</em></div></div>
   </div>
@@ -525,9 +575,16 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">06</span><h2><span class="sev crit">Критично</span>Немає платформи для листів після покупки</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У коді магазину ми знайшли <b>лише Privy</b> — це інструмент спливаючих вікон, а не система листів. Ні Klaviyo, ні Omnisend, ні Attentive, ні Shopify Email.</p><p>Тобто найприбутковіші автоматичні листи майже напевно не працюють: покинутий кошик, покинутий перегляд, прохання про відгук, повернення клієнта.</p><p class="fine-note">Це висновок із коду сторінки — повністю підтвердити можна лише з доступом до кабінету.</p></div>
-    <div class="v1"><div class="viz"><h4>Що знайшли в коді</h4><div class="row"><span>Privy (вікна й збір email)</span><em class="ok">є</em></div><div class="row"><span>Klaviyo / Omnisend / Attentive</span><em class="bad">немає</em></div><div class="row"><span>Покинутий кошик</span><em class="bad">немає</em></div><div class="row"><span>Покинутий перегляд</span><em class="bad">немає</em></div><div class="row"><span>Прохання про відгук</span><em class="bad">немає</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="Блок збору email у футері"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Тут збирається email — і на цьому все</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Підключити <b>Klaviyo</b> (або рівноцінний сервіс) і зібрати 4 базові ланцюжки: покинутий кошик, покинутий перегляд, відгук після доставки, повернення клієнта.</p></div>
-    <div class="v2"><div class="viz"><h4>Після підключення</h4><div class="row"><span>Покинутий кошик</span><em class="ok">3 листи</em></div><div class="row"><span>Покинутий перегляд</span><em class="ok">2 листи</em></div><div class="row"><span>Відгук після доставки</span><em class="ok">авто</em></div><div class="row"><span>Повернення клієнта</span><em class="ok">через 60–90 днів</em></div><div class="tags"><span>«1M+ каблучок продано» — база вже є</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Klaviyo · flows</div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Abandoned cart</b><span>3 листи · 1 год / 24 год / 3 дні</span></div><span class="m-add">on</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Abandoned browse</b><span>2 листи · переглянув, не поклав</span></div><span class="m-add">on</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Review request</b><span>через 7 днів після доставки</span></div><span class="m-add">on</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Win-back</b><span>через 60–90 днів · новий колір</span></div><span class="m-add">on</span></div>
+        <div class="m-note-rf">Листи йдуть самі, без ручної роботи</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Магазин, де каблучки купують парами й по кілька кольорів, нарешті повертає покупця сам — листом, а не новим рекламним кліком.</p><div class="stats"><div><b>4 ланцюжки</b><span>яких зараз немає</span></div><div><b>1M+</b><span>проданих каблучок — база для листів</span></div></div></div><div class="ptag"><span>Вартість</span><b>$560</b><em>14 год роботи · $40/год</em></div></div>
   </div>
@@ -563,7 +620,7 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">08</span><h2><span class="sev imp">Середній пріоритет</span>На сторінці товару немає справжніх рекомендацій</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Під товаром стоїть та сама карусель «Best Sellers», що й на головній, — вона ніяк не повʼязана з тим, що людина зараз дивиться.</p><p>При цьому Rinfit продає <b>парні набори, набори каблучок, протектори й підставки</b>. У відгуках люди самі пишуть «це моя друга покупка», «візьму ще один колір» — попит є, сторінка просто не пропонує.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Під товаром зараз</h4><img src="img/desk-bestsellers.jpg" alt=""><div class="cap2">Та сама карусель, що й на головній</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-cards.jpg" alt="Під товаром — та сама карусель Best Sellers"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Карусель, не повʼязана з товаром</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Показувати <b>звʼязані товари</b>: «Доповніть парним набором», «Чоловіча каблучка в пару», «Підставка для каблучки».</p></div>
     <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
         <div class="m-h2 rf">Complete the set</div>
@@ -581,7 +638,7 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">09</span><h2><span class="sev imp">Середній пріоритет</span>У кошику немає ні знаків довіри, ні швидкої оплати</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>На сторінці товару під кнопкою стоять чотири значки довіри — а в кошику, де людина вже дістає картку, немає жодного.</p><p>Немає й кнопок швидкої оплати: ні Shop Pay, ні PayPal, ні Apple Pay. Єдиний шлях — звичайна форма з адресою, а це найчастіше місце, де кидають замовлення на телефоні.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Кошик зараз</h4><img src="img/desk-cart.jpg" alt=""><div class="cap2">Смуга безкоштовної доставки є, знаків довіри немає</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-cartpage.jpg" alt="Кошик без знаків довіри"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Сторінка кошика на телефоні</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Повторити в кошику <b>значки довіри й піктограми оплати</b> та додати <b>Shop Pay, PayPal і Apple Pay</b> — вони заповнюють адресу й картку за людину.</p></div>
     <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
         <div class="m-h2 rf">Your cart</div>
@@ -601,7 +658,7 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">10</span><h2><span class="sev imp">Середній пріоритет</span>На сайті немає чату чи помічника з розміром</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Ми перевірили обидва нижні кути й код сторінки: <b>жодного чату</b>. При цьому головне питання покупця силіконової каблучки — «чи підійде мені розмір».</p><p>У відгуках видно, що підтримка відповідає на це добре — але поштою, і лише тим, хто написав.</p></div>
-    <div class="v1"><div class="viz"><h4>Перевірено</h4><div class="row"><span>Чат у кутку</span><em class="bad">немає</em></div><div class="row"><span>Чат у коді сторінки</span><em class="bad">немає</em></div><div class="row"><span>Калькулятор розміру</span><em class="ok">є ✓</em></div><div class="row"><span>Підтримка поштою</span><em class="ok">є ✓</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-buybox.jpg" alt="Сторінка товару без чату"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Питання про розмір ставити нікому</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Поставити <b>чат або помічника з розміром</b>, який ловить сумнів саме там, де він виникає — на сторінці товару.</p></div>
     <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
         <div class="m-chat"><b>Not sure about your size?</b><p>Tell us your usual ring size — we’ll confirm the fit and the exchange rule.</p><div class="m-field rf">Your size…</div></div>
@@ -618,11 +675,17 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">11</span><h2><span class="sev imp">Середній пріоритет</span>На картках товару немає позначок</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Картки показують фото, рейтинг, назву, ціну й кольори — але жодної позначки «Хіт», «Новинка» чи «Знижка».</p><p>Підстави є чесні: у топової каблучки <b>746 відгуків</b>, а Frosted Clear Thin набір коштує $145 проти $179,95.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Картки зараз</h4><img src="img/desk-bestsellers.jpg" alt=""><div class="cap2">Усі картки виглядають однаково</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-coll-h1.jpg" alt="Картки товару без позначок"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Усі картки виглядають однаково</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Позначити <b>реальні</b> хіти й реальні знижки — щоб оку було за що зачепитися в сітці, де всі каблучки однаково гарні.</p></div>
-    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
-        <div class="m-cards"><div class="m-pc"><div class="m-pc-img"><span class="m-flag">Bestseller</span></div><b>Emerald Cut CZ</b><span>★ 5.0 (746) · $49.99</span></div>
-        <div class="m-pc"><div class="m-pc-img"><span class="m-flag sale">Save $34.95</span></div><b>Frosted Clear Thin Set</b><span>$145.00 <s>$179.95</s></span></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-h2 rf">Best Sellers</div>
+        <div class="m-cards">
+          <div class="m-pc"><div class="m-pc-img"><span class="m-flag">Bestseller</span></div><b>Emerald Cut CZ</b><span>★ 5.0 (746)</span><span class="m-price-rf">$49.99</span><div class="m-sw"><i style="background:#1e1e20"></i><i style="background:#dcc9b4"></i><i style="background:#f2d2d1"></i></div></div>
+          <div class="m-pc"><div class="m-pc-img"><span class="m-flag sale">−$34.95</span></div><b>Frosted Clear Thin Set</b><span>★ 5.0 (117)</span><span class="m-price-rf">$145.00 <s>$179.95</s></span><div class="m-sw"><i style="background:#eef2f3"></i><i style="background:#ebebec"></i></div></div>
+          <div class="m-pc"><div class="m-pc-img"><span class="m-flag new">New</span></div><b>Oval Cut CZ</b><span>★ 5.0 (289)</span><span class="m-price-rf">$49.99</span><div class="m-sw"><i style="background:#d2dce7"></i><i style="background:#dcc9b4"></i></div></div>
+          <div class="m-pc"><div class="m-pc-img"></div><b>Princess Cut CZ</b><span>★ 5.0 (117)</span><span class="m-price-rf">$49.99</span><div class="m-sw"><i style="background:#f2d2d1"></i><i style="background:#1e1e20"></i></div></div>
+        </div>
+        <span class="m-btn dark">Shop all rings</span>
       </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>У сітці зʼявляються орієнтири: що беруть найчастіше і де справжня знижка. Позначки ставимо лише на те, що підтверджується даними.</p><div class="stats"><div><b>746 відгуків</b><span>у топової каблучки</span></div><div><b>$34,95</b><span>реальна знижка на набір</span></div></div></div><div class="ptag"><span>Вартість</span><b>$160</b><em>4 год роботи · $40/год</em></div></div>
@@ -636,7 +699,13 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Ми заміряли: основний текст на телефоні — <b>14 px</b> замість мінімальних 16. Через це iOS ще й <b>сам збільшує</b> сторінку, коли людина торкається поля пошуку.</p><p>Іконки меню, пошуку, кабінету й кошика — по <b>24×24 px</b> проти норми 44×44. З перших 30 елементів 18 менші за норму.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-home.jpg" alt="Мобільна головна: дрібні іконки в шапці"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Шапка: іконки 24×24 px</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Підняти базовий шрифт до <b>16 px</b> і зону натискання іконок до <b>44×44</b>.</p></div>
-    <div class="v2"><div class="viz"><h4>Ціль</h4><div class="row"><span>Базовий шрифт</span><em class="ok">14 → 16 px</em></div><div class="row"><span>Іконки шапки</span><em class="ok">24 → 44 px</em></div><div class="row"><span>Автозум на iOS</span><em class="ok">зникає</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-h2 rf">Search</div>
+        <div class="m-field rf">Search rings…</div>
+        <div class="m-tap"><i></i><span>Меню · пошук · кошик — зона 44×44</span></div>
+        <div class="m-note-rf">Базовий текст 16 px — iOS більше не збільшує сторінку</div>
+        <div class="m-cards"><div class="m-pc"><div class="m-pc-img"></div><b>Emerald Cut CZ</b><span>★ 5.0 (746) · $49.99</span></div><div class="m-pc"><div class="m-pc-img"></div><b>Oval Cut CZ</b><span>★ 5.0 (289) · $49.99</span></div></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Найчастіші дотики — пошук, меню, кошик — перестають промахуватися, а сторінка не смикається під час пошуку.</p><div class="stats"><div><b>18 з 30</b><span>елементів зараз дрібні</span></div><div><b>16 px</b><span>текст без автозуму</span></div></div></div><div class="ptag"><span>Вартість</span><b>$160</b><em>4 год роботи · $40/год</em></div></div>
   </div>
@@ -647,9 +716,17 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">13</span><h2><span class="sev imp">Середній пріоритет</span>На сторінці кошика немає допродажу, який є у висувному</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У висувному кошику є блок «You May Also Like» з швидкою покупкою. На повній сторінці <code>/cart</code> його <b>немає</b>.</p><p>Тобто ті, хто заходить у кошик через іконку в шапці, не бачать жодної рекомендації.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Сторінка /cart зараз</h4><img src="img/desk-cartpage.jpg" alt=""><div class="cap2">Оцінка доставки є, рекомендацій немає</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-cartpage.jpg" alt="Сторінка кошика без рекомендацій"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Сторінка /cart на телефоні</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Привести дві поверхні до одного вигляду: додати той самий блок рекомендацій на сторінку кошика.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Висувний кошик</span><em class="ok">рекомендації ✓</em></div><div class="row"><span>Сторінка /cart</span><em class="ok">рекомендації ✓</em></div><div class="row"><span>Швидка покупка</span><em class="ok">в обох</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Cart</div>
+        <div class="m-bar"><i style="width:62%"></i></div>
+        <div class="m-note-rf">Spend $30.01 more for free shipping</div>
+        <span class="m-btn dark">Checkout · $49.99</span>
+        <div class="m-h2 rf" style="margin-top:.8em">You may also like</div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Men’s Infinity 9 mm</b><span>$39.99</span></div><span class="m-add">Add</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Ring Dish</b><span>$12.99</span></div><span class="m-add">Add</span></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Допродаж працює для всіх, хто дійшов до кошика, а не лише для тих, хто відкрив його одразу після додавання.</p><div class="stats"><div><b>2 поверхні</b><span>кошика однакові</span></div><div><b>+1 дотик</b><span>до додаткового товару</span></div></div></div><div class="ptag"><span>Вартість</span><b>$120</b><em>3 год роботи · $40/год</em></div></div>
   </div>
@@ -679,7 +756,14 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>На сторінці товару ніде не видно, скільки лишилось: ні «залишилось 4 у цьому кольорі», ні «швидко розбирають».</p><p>При десяти кольорах у каблучки й топовому товарі з 746 відгуками чесна позначка про малий залишок — доречний поштовх.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-buybox.jpg" alt="Блок покупки без сигналу наявності"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Блок покупки на телефоні</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Показувати залишок <b>лише за реальними даними складу</b> — і тільки там, де він справді малий. Вигаданих лічильників не ставимо.</p></div>
-    <div class="v2"><div class="viz"><h4>Як робимо</h4><div class="row"><span>Джерело</span><em class="ok">реальні залишки Shopify</em></div><div class="row"><span>Показ</span><em class="ok">лише коли мало</em></div><div class="row"><span>Вигадані лічильники</span><em class="ok">ні</em></div><div class="tags"><span>на сайті зараз немає фальшивої терміновості — так і лишаємо</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-title">Silicone Ring — 11×8 mm Oval Cut CZ</div>
+        <div class="m-price-rf" style="font-size:.8em">$49.99</div>
+        <div class="m-sw"><i style="background:#dcc9b4"></i><i style="background:#1e1e20"></i><i style="background:#f2d2d1"></i></div>
+        <div class="hl" style="font-size:.66em">Only 4 left in Nude and Rose Gold</div>
+        <span class="m-btn dark">Add to cart</span>
+        <div class="m-trust">Показуємо лише за реальними залишками складу</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Людина, яка вагається між двома кольорами, отримує чесну підставу вирішити сьогодні.</p><div class="stats"><div><b>10 кольорів</b><span>в одній каблучці</span></div><div><b>лише правда</b><span>ніяких вигаданих цифр</span></div></div></div><div class="ptag"><span>Вартість</span><b>$120</b><em>3 год роботи · $40/год</em></div></div>
   </div>
@@ -690,9 +774,14 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">16</span><h2><span class="sev imp">Середній пріоритет</span>На сторінці товару немає «хлібних крихт»</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У колекціях навігаційний ланцюжок є, а на сторінці товару його <b>немає</b> — ми перевірили код.</p><p>Людина з Google або реклами потрапляє на товар і не має видимого шляху назад у категорію. Плюс сторінка втрачає право на цей ланцюжок у результатах пошуку.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>Колекції</span><em class="ok">ланцюжок є</em></div><div class="row"><span>Сторінка товару</span><em class="bad">немає</em></div><div class="row"><span>Розмітка BreadcrumbList</span><em class="bad">немає</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-pdp-top.jpg" alt="Сторінка товару без «хлібних крихт»"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Верх сторінки товару</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Додати «Home › Women's Rings › Товар» з розміткою BreadcrumbList.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Шлях назад у категорію</span><em class="ok">видно</em></div><div class="row"><span>Ланцюжок у Google</span><em class="ok">показується</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-crumb-rf">Home <b>/</b> Women’s Rings <b>/</b> Oval Cut CZ</div>
+        <img class="m-photo grow" src="img/now-pdp-top.jpg" alt="">
+        <div class="m-title">Silicone Ring — 11×8 mm Oval Cut CZ</div>
+        <div class="m-note-rf">Ланцюжок видно і в Google</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Людина з реклами чи пошуку легко переходить до схожих каблучок, а не закриває вкладку, побачивши один товар.</p><div class="stats"><div><b>1 рядок</b><span>навігації</span></div><div><b>+ланцюжок</b><span>у результатах пошуку</span></div></div></div><div class="ptag"><span>Вартість</span><b>$80</b><em>2 год роботи · $40/год</em></div></div>
   </div>
@@ -703,9 +792,15 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">17</span><h2><span class="sev imp">Середній пріоритет</span>Немає пікселя TikTok, хоча TikTok — основний контент</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Meta, GA4, Google Ads, Pinterest і Clarity працюють — а <b>пікселя TikTok немає</b>.</p><p>При цьому на головній стоїть стіна відео покупців у стилі TikTok, а в футері — посилання на TikTok-профіль. Тобто канал, у який вкладають контент, не вимірюється й не ретаргетиться.</p></div>
-    <div class="v1"><div class="viz"><h4>Пікселі зараз</h4><div class="row"><span>Meta Pixel</span><em class="ok">є</em></div><div class="row"><span>GA4</span><em class="ok">є</em></div><div class="row"><span>Google Ads</span><em class="ok">є</em></div><div class="row"><span>Pinterest</span><em class="ok">є</em></div><div class="row"><span>TikTok</span><em class="bad">немає</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="TikTok у футері — трафік є, вимірювання немає"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Посилання на TikTok у футері</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Встановити піксель TikTok і звʼязати з ним події перегляду товару, додавання в кошик і покупки.</p></div>
-    <div class="v2"><div class="viz"><h4>Після встановлення</h4><div class="row"><span>TikTok Pixel</span><em class="ok">працює</em></div><div class="row"><span>Ретаргет на TikTok</span><em class="ok">можливий</em></div><div class="row"><span>Оцінка каналу</span><em class="ok">у цифрах</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">TikTok · events</div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>ViewContent</b><span>перегляд каблучки</span></div><span class="m-add">on</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>AddToCart</b><span>додавання в кошик</span></div><span class="m-add">on</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>Purchase</b><span>оплата · сума замовлення</span></div><span class="m-add">on</span></div>
+        <div class="m-note-rf">Трафік із TikTok видно в цифрах і можна повертати рекламою</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Канал, який дає магазину контент і трафік, нарешті можна виміряти й повертати глядачів рекламою.</p><div class="stats"><div><b>5 пікселів</b><span>працюють, шостого немає</span></div><div><b>2 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$80</b><em>2 год роботи · $40/год</em></div></div>
   </div>
@@ -718,7 +813,12 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>На телефоні панель складається з назви й ціни, потім вибору кольору, потім розміру, потім кнопки — це близько <b>180 px, майже 21% екрана</b>, постійно.</p><p>Вона працює, але зʼїдає пʼяту частину того, заради чого людина прийшла — фото каблучки.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-buybox.jpg" alt="Липка панель покупки на телефоні"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Панель ≈180 px заввишки</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Згорнути її до <b>однієї кнопки</b>, яка розкриває вибір кольору й розміру за дотиком.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Висота панелі</span><em class="ok">180 → ~70 px</em></div><div class="row"><span>Екрана під товар</span><em class="ok">+15%</em></div><div class="row"><span>Кнопка</span><em class="ok">завжди на місці</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <img class="m-photo grow" src="img/now-pdp-top.jpg" alt="">
+        <div class="m-trust">Більше екрана під товар</div>
+        <div style="flex:1"></div>
+        <div class="m-sticky-rf"><span>$49.99</span><a>Add to cart</a></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Покупець бачить більше товару, а кнопка лишається під рукою на будь-якій висоті сторінки.</p><div class="stats"><div><b>21% → 8%</b><span>екрана під панеллю</span></div><div><b>1 дотик</b><span>до вибору розміру</span></div></div></div><div class="ptag"><span>Вартість</span><b>$80</b><em>2 год роботи · $40/год</em></div></div>
   </div>
@@ -731,7 +831,12 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У смузі вгорі написано «FREE U.S. Shipping on Orders $80+» — і більше нічого. Про <b>обміни, повернення й довічну гарантію</b> там не сказано, хоча саме це хвилює людину, яка вгадує розмір каблучки онлайн.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-home.jpg" alt="Верхня смуга: лише про доставку"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Смуга вгорі сторінки</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Зробити смугу <b>змінною</b>: доставка → легкий обмін розміру → довічна гарантія. Те саме місце, втричі більше відповідей.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Повідомлення 1</span><em class="ok">Безкоштовна доставка від $80</em></div><div class="row"><span>Повідомлення 2</span><em class="ok">Легкий обмін розміру</em></div><div class="row"><span>Повідомлення 3</span><em class="ok">Довічна гарантія</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-ann-rf">FREE U.S. Shipping on Orders $80+</div>
+      <div class="m-ann-rf soft">Легкий обмін розміру — безкоштовно</div>
+      <div class="m-ann-rf soft">Довічна гарантія Rinfit™</div><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-note-rf">Три повідомлення по черзі в тій самій смузі</div>
+        <img class="m-photo grow" src="img/now-cards.jpg" alt="">
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Три головні заперечення знімаються ще до того, як людина дійшла до товару — у місці, яке й так є на кожній сторінці.</p><div class="stats"><div><b>1 → 3</b><span>повідомлення в смузі</span></div><div><b>1 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -748,9 +853,15 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">20</span><h2><span class="sev low">Низький пріоритет</span>Немає програми лояльності</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Балів, рівнів чи винагород на сайті немає. При цьому у відгуках повно повторних покупок («це моя друга покупка», «візьму ще колір»), а каталог — від $8,99 до $145.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>Бали за покупки</span><em class="bad">немає</em></div><div class="row"><span>Рівні / винагороди</span><em class="bad">немає</em></div><div class="row"><span>Повторні покупки</span><em class="ok">є у відгуках</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="Футер без програми лояльності"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Жодних балів чи винагород</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Запустити просту програму: бали за покупку, відгук і підписку, списання на наступне замовлення.</p></div>
-    <div class="v2"><div class="viz"><h4>Після запуску</h4><div class="row"><span>Бали за покупку</span><em class="ok">є</em></div><div class="row"><span>Бали за відгук з фото</span><em class="ok">є</em></div><div class="row"><span>Списання балів</span><em class="ok">на наступне</em></div><div class="tags"><span>перетворює одну каблучку на колекцію</span></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Rinfit Rewards</div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>120 балів</b><span>за покупку $49.99</span></div><span class="m-add">+</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>50 балів</b><span>за відгук із фото</span></div><span class="m-add">+</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>−$10</b><span>на наступне замовлення</span></div><span class="m-add">✓</span></div>
+        <span class="m-btn dark">Join rewards</span>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Покупець, який і так повертається, отримує причину купувати саме тут, а не в сусідньому магазині силіконових каблучок.</p><div class="stats"><div><b>$8,99–$145</b><span>діапазон каталогу</span></div><div><b>2-га покупка</b><span>уже є у відгуках</span></div></div></div><div class="ptag"><span>Вартість</span><b>$320</b><em>8 год роботи · $40/год</em></div></div>
   </div>
@@ -761,9 +872,15 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">21</span><h2><span class="sev low">Низький пріоритет</span>Ніде не збираються номери телефонів</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Ні у вікні, ні в футері, ні в кошику немає поля телефону — збирається лише email. Для бренду, який запускає нові кольори й колекції, SMS відкривають значно частіше за листи.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>Email</span><em class="ok">збирається</em></div><div class="row"><span>Телефон / SMS</span><em class="bad">ніде</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-popup.jpg" alt="Збирається лише email"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">У вікні — тільки пошта</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Додати збір телефону (з окремою згодою) і два-три SMS-сценарії: підтвердження, нова колекція, повернення в кошик.</p></div>
-    <div class="v2"><div class="viz"><h4>Після запуску</h4><div class="row"><span>Збір телефону</span><em class="ok">у вікні й кошику</em></div><div class="row"><span>SMS про нові кольори</span><em class="ok">є</em></div><div class="row"><span>Згода</span><em class="ok">окрема, як вимагає закон</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-card rfc"><b>Get 10% off your first order</b><p>Email — код одразу. Телефон — анонси нових кольорів.</p>
+        <div class="m-field rf">Email</div><div class="m-field rf">Phone (optional)</div>
+        <div class="m-check-rf"><i></i> I agree to receive SMS</div>
+        <span class="m-btn dark">Get my code</span></div>
+        <div class="m-note-rf">Окрема згода на SMS — як вимагає закон</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Анонси нових кольорів доходять до людей одразу, а не лежать у поштовій скриньці серед інших листів.</p><div class="stats"><div><b>0 → 1</b><span>новий канал звʼязку</span></div><div><b>SMS</b><span>для запусків колекцій</span></div></div></div><div class="ptag"><span>Вартість</span><b>$200</b><em>5 год роботи · $40/год</em></div></div>
   </div>
@@ -774,9 +891,14 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">22</span><h2><span class="sev low">Низький пріоритет</span>Немає механіки «приведи друга»</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Каблучки купують парами й дарують, а у бренду є жива спільнота, яка сама знімає відео. Але віджета рекомендації другу немає — є лише партнерська сторінка, а вона для блогерів, не для звичайних покупців.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>Партнерська програма</span><em class="ok">є (для блогерів)</em></div><div class="row"><span>«Приведи друга»</span><em class="bad">немає</em></div><div class="row"><span>Відстеження рекомендацій</span><em class="bad">немає</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="У футері немає механіки рекомендації"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Є лише партнерська сторінка для блогерів</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Додати простий віджет: покупець ділиться посиланням, друг отримує знижку, покупець — бонус.</p></div>
-    <div class="v2"><div class="viz"><h4>Після запуску</h4><div class="row"><span>Посилання для друга</span><em class="ok">у листі після покупки</em></div><div class="row"><span>Знижка другові</span><em class="ok">є</em></div><div class="row"><span>Бонус покупцеві</span><em class="ok">є</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Give $10, get $10</div>
+        <div class="m-card rfc"><p>Поділіться посиланням — друг отримає $10 на першу каблучку, ви $10 на наступну.</p>
+        <div class="m-field rf">rinfit.com/r/lauren-t</div><span class="m-btn dark">Share link</span></div>
+        <div class="m-rec"><div class="m-rec-img"></div><div><b>2 друга купили</b><span>$20 на вашому рахунку</span></div><span class="m-add">✓</span></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Задоволені покупці приводять нових — і це видно в цифрах, а не лише в коментарях під відео.</p><div class="stats"><div><b>парні покупки</b><span>уже в каталозі</span></div><div><b>відстеження</b><span>кожної рекомендації</span></div></div></div><div class="ptag"><span>Вартість</span><b>$160</b><em>4 год роботи · $40/год</em></div></div>
   </div>
@@ -787,9 +909,15 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">23</span><h2><span class="sev low">Низький пріоритет</span>Смуга соцдоказу показує один відгук за раз</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>«Over 1M Rings Sold» — сильна цифра, але поруч лише один відгук, що змінюється, і три маленькі аватарки. При цьому магазин має сотні пʼятизіркових відгуків із фото.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Смуга зараз</h4><img src="img/desk-socialproof.jpg" alt=""><div class="cap2">Один відгук і три аватарки</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-socialproof.jpg" alt="Смуга з одним відгуком"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">«Over 1M Rings Sold» і один відгук</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Показати <b>загальний рейтинг</b> поруч із заголовком і три відгуки одночасно.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Загальний рейтинг</span><em class="ok">біля «1M Rings Sold»</em></div><div class="row"><span>Відгуків одночасно</span><em class="ok">3</em></div><div class="row"><span>Фото покупців</span><em class="ok">у кожному</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Over 1M Rings Sold</div>
+        <div class="m-rate">★★★★★ <b>4.9</b> · 745 reviews</div>
+        <div class="m-card rfc" style="text-align:left"><p>“Comfortable and the exchange was easy.”</p><span class="m-proof-rf">Lauren T. · verified</span></div>
+        <div class="m-card rfc" style="text-align:left"><p>“Second purchase — this shape even more.”</p><span class="m-proof-rf">Kastery B. · verified</span></div>
+        <div class="m-card rfc" style="text-align:left"><p>“Wear it at the gym every day.”</p><span class="m-proof-rf">Hanna K. · verified</span></div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Найсильніший актив магазину — сотні відгуків із фото — працює на весь екран, а не по одному реченню за раз.</p><div class="stats"><div><b>745 відгуків</b><span>лише в одного товару</span></div><div><b>1 → 3</b><span>відгуки одночасно</span></div></div></div><div class="ptag"><span>Вартість</span><b>$120</b><em>3 год роботи · $40/год</em></div></div>
   </div>
@@ -800,9 +928,14 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">24</span><h2><span class="sev low">Низький пріоритет</span>42 картинки без опису (alt)</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>З 497 зображень на головній <b>42 не мають alt</b> — зокрема сам головний банер. Це втрачена видимість у пошуку за картинками і непридатність сторінки для зчитувачів екрана.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>Зображень на головній</span><em class="">497</em></div><div class="row"><span>Без alt</span><em class="bad">42</em></div><div class="row"><span>Серед них</span><em class="bad">головний банер</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-cards.jpg" alt="Картинки товарів без опису"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">42 з 497 зображень без alt</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Дописати опис до всіх 42 — коротко й по суті товару.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Без alt</span><em class="ok">0</em></div><div class="row"><span>Пошук за картинками</span><em class="ok">бачить товари</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Google · Images</div>
+        <div class="m-cards"><div class="m-pc"><div class="m-pc-img"></div><span>silicone ring oval cut</span></div><div class="m-pc"><div class="m-pc-img"></div><span>emerald cut silicone ring</span></div>
+        <div class="m-pc"><div class="m-pc-img"></div><span>rinfit halo ring</span></div><div class="m-pc"><div class="m-pc-img"></div><span>men’s infinity band</span></div></div>
+        <div class="m-note-rf">Кожне фото має опис — і знаходиться в пошуку</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Магазин стає доступним для людей зі зчитувачами екрана, а картинки товарів починають знаходитись у пошуку.</p><div class="stats"><div><b>42 → 0</b><span>картинок без опису</span></div><div><b>2 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$80</b><em>2 год роботи · $40/год</em></div></div>
   </div>
@@ -813,9 +946,15 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">25</span><h2><span class="sev low">Низький пріоритет</span>Підказка про розмір захована у вкладці</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Вкладки йдуть так: «Customer Reviews | Product Information | Rinfit™ Warranty» — і відкриваються на відгуках. А головна підказка <b>«True to size (size down if between sizes)»</b> лежить у другій вкладці.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Вкладка з характеристиками</h4><img src="img/desk-pdpinfo.jpg" alt=""><div class="cap2">Ширина 6 мм, товщина 2 мм, підказка про розмір</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-pdp-tabs.jpg" alt="Вкладки: першою відкриті відгуки"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Характеристики — за кліком</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Винести підказку про розмір <b>до самого вибору розміру</b>, а вкладки переставити так, щоб характеристики були на видноті.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Підказка про розмір</span><em class="ok">біля вибору розміру</em></div><div class="row"><span>Характеристики</span><em class="ok">не за кліком</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-title">Choose your size</div>
+        <div class="m-sizes"><span>4</span><span>5</span><span class="on">6</span><span>7</span><span>8</span></div>
+        <div class="hl" style="font-size:.66em">True to size — if you are between sizes, size down</div>
+        <span class="m-btn dark">Add to cart</span>
+        <div class="m-note-rf">Характеристики відкриті одразу, не за кліком</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Людина бачить головну пораду про розмір саме тоді, коли його обирає, — і рідше замовляє не той.</p><div class="stats"><div><b>#1 причина</b><span>обмінів — розмір</span></div><div><b>1 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -828,7 +967,13 @@ a.irow:hover b{text-decoration:underline}
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У ряду довіри є значок «100% SATISFACTION», але конкретики немає: ні «30 днів на повернення», ні «безкоштовний обмін, якщо не підійшов розмір».</p><p>У відгуках люди самі хвалять підтримку за обмін — обіцянка вже виконується, її просто не написано.</p></div>
     <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-m-buybox.jpg" alt="Ряд довіри без конкретики"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Під кнопкою «Add to cart»</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Додати короткий рядок під кнопкою: скільки днів на повернення й що обмін розміру безкоштовний.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Термін повернення</span><em class="ok">написаний</em></div><div class="row"><span>Обмін розміру</span><em class="ok">безкоштовний — сказано</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-title">Silicone Ring — Emerald Cut CZ</div>
+        <div class="m-price-rf" style="font-size:.8em">$49.99</div>
+        <span class="m-btn dark">Add to cart</span>
+        <div class="hl" style="font-size:.62em">30 днів на повернення · безкоштовний обмін розміру</div>
+        <div class="m-trust">Lifetime warranty · Perfect fit guarantee</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Головне заперечення — «а раптом не підійде» — знімається просто тим, що правило нарешті написане словами.</p><div class="stats"><div><b>1 рядок</b><span>під кнопкою</span></div><div><b>обмін</b><span>уже працює — треба сказати</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -839,9 +984,14 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">27</span><h2><span class="sev low">Низький пріоритет</span>Заголовок колекції — «WOMEN RINGS»</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Заголовок сторінки читається як «WOMEN RINGS» — граматично це не по-англійськи. Опис нижче написаний добре, а заголовок не відповідає його рівню.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>H1 колекції</span><em class="bad">WOMEN RINGS</em></div><div class="row"><span>Опис сторінки</span><em class="ok">написаний добре</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-coll-h1.jpg" alt="Заголовок колекції WOMEN RINGS"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Заголовок сторінки колекції</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Замінити на <b>«Women's Silicone Rings»</b> — правильно і збігається з тим, що люди шукають.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>H1</span><em class="ok">Women's Silicone Rings</em></div><div class="row"><span>Збіг із пошуком</span><em class="ok">є</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-hdr rf"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" stroke="#373a36" stroke-width="1.4"/></svg><span class="m-logo">RINFIT</span><span class="lang">0</span></div><div class="m-pad col grow">
+        <div class="m-crumb-rf">Home <b>/</b> Shop <b>/</b> Women’s Rings</div>
+        <div class="m-title big">Women’s Silicone Rings</div>
+        <div class="m-note-rf">78 rings · так це шукають у Google</div>
+        <img class="m-photo grow" src="img/now-cards.jpg" alt="">
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Сторінка колекції виглядає професійно і потрапляє в те, що люди насправді набирають у пошуку.</p><div class="stats"><div><b>1 заголовок</b><span>на 78 товарів</span></div><div><b>1 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -852,9 +1002,14 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">28</span><h2><span class="sev low">Низький пріоритет</span>У футері немає піктограм оплати</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Ми переглянули футер: там лише копірайт і чотири посилання на політики. Жодної позначки Visa, Mastercard, Amex, PayPal чи Shop Pay.</p></div>
-    <div class="v1"><div class="viz imgcard"><h4>Футер зараз</h4><img src="img/desk-footer.jpg" alt=""><div class="cap2">Політики, адреса, соцмережі — піктограм оплати немає</div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="Футер без піктограм оплати"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Політики й соцмережі є, оплати немає</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Додати піктограми способів оплати — це звичний знак «тут безпечно платити».</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>Піктограми оплати</span><em class="ok">у футері</em></div><div class="row"><span>Політики й адреса</span><em class="ok">уже є ✓</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Rinfit</div>
+        <div class="m-note-rf">Refund · Privacy · Terms · Shipping</div>
+        <div class="m-pay"><span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span><span>Shop Pay</span></div>
+        <div class="m-trust">Secure checkout · 8 Edgewater Dr E, Falmouth, MA</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Сумнів «чи безпечно тут платити» знімається дешевим і звичним способом — саме там, де людина його зазвичай шукає.</p><div class="stats"><div><b>5 позначок</b><span>способів оплати</span></div><div><b>1 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -865,9 +1020,13 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">29</span><h2><span class="sev low">Низький пріоритет</span>Посилання на TikTok іде через Google</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Іконка TikTok у футері веде не на профіль, а через <code>google.com/url?…</code>. Воно працює, але додає зайвий перехід, може бути вирізане захистом приватності й виглядає неохайно.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз</h4><div class="row"><span>TikTok</span><em class="warn">через google.com/url</em></div><div class="row"><span>Instagram · Pinterest · YouTube · Facebook</span><em class="ok">прямі</em></div></div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="Іконки соцмереж у футері"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">TikTok веде через google.com/url</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Поставити пряме посилання на профіль.</p></div>
-    <div class="v2"><div class="viz"><h4>Після правки</h4><div class="row"><span>TikTok</span><em class="ok">пряме посилання</em></div><div class="row"><span>Зайвий перехід</span><em class="ok">немає</em></div></div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock rf"><div class="m-pad col grow">
+        <div class="m-h2 rf">Follow Rinfit</div>
+        <div class="m-social"><span>Instagram</span><span>TikTok</span><span>Pinterest</span><span>YouTube</span><span>Facebook</span></div>
+        <div class="hl" style="font-size:.62em">tiktok.com/@rinfitrings — пряме посилання</div>
+      </div></div></div><div class="url"><span>rinfit.com</span></div></div></div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Перехід у TikTok працює миттєво й не губиться в браузерах із захистом від стеження.</p><div class="stats"><div><b>1 посилання</b><span>виправити</span></div><div><b>1 год</b><span>роботи</span></div></div></div><div class="ptag"><span>Вартість</span><b>$40</b><em>1 год роботи · $40/год</em></div></div>
   </div>
@@ -882,13 +1041,28 @@ a.irow:hover b{text-decoration:underline}
 <section class="slide" id="tryon">
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><span class="num">30</span><h2><span class="sev extra">Пропозиція</span>Віртуальна примірка каблучки на сайті</h2></div>
-  <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Головне вагання покупця — <b>чи підійде розмір і як це виглядатиме на руці</b>. Зараз на це відповідають калькулятор розміру, фото на руці й відгуки з фотографіями — але приміряти каблучку неможливо.</p><p>Саме через розмір люди пишуть у підтримку й роблять обміни.</p></div>
-    <div class="v1"><div class="viz"><h4>Зараз на сторінці товару</h4><div class="row"><span>Калькулятор розміру</span><em class="ok">є ✓</em></div><div class="row"><span>Фото каблучки на руці</span><em class="ok">є ✓</em></div><div class="row"><span>Відео товару</span><em class="ok">є ✓</em></div><div class="row"><span>Примірка на своїй руці</span><em class="bad">немає</em></div></div></div>
-    <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p><b>Примірка через камеру телефона</b> прямо на сторінці товару: людина наводить камеру на руку й бачить обрану каблучку у своєму кольорі та розмірі.</p><p>Ми вже зібрали робочий прототип: усі 12 каблучок змодельовані за їхніми ж сторінками — ширина й товщина ободка, форма й розмір каменя, оправа. Ліворуч на картинці — фото Rinfit, праворуч — наша модель.</p><p class="fine-note">Живий прототип: <a href="https://anyaserputko-dev.github.io/rinfit-try-on/" target="_blank">anyaserputko-dev.github.io/rinfit-try-on</a></p></div>
-    <div class="v2"><div class="viz imgcard"><h4>Фото Rinfit · наша 3D-модель</h4><img src="img/tryon-compare.jpg" alt=""><div class="cap2">Ліворуч — товарне фото rinfit.com, праворуч — наш рендер тієї самої каблучки</div></div></div>
-    <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
-      <div class="card"><p>Покупець приміряє каблучку до покупки — менше обмінів через розмір, більше часу на сторінці й готовий матеріал для TikTok, де в бренду вже є аудиторія.</p><div class="stats"><div><b>12 каблучок</b><span>уже змодельовано</span></div><div><b>на пристрої</b><span>камера нікуди не передається</span></div></div></div><div class="ptag"><span>Вартість</span><b>Окремо</b><em>обсяг і ціну узгоджуємо після демо</em></div></div>
+  <div class="tryon-grid">
+    <div class="tcol">
+      <div class="lbl"><span class="pill">Зараз</span></div>
+      <div class="txt"><p>Головне вагання покупця — <b>чи підійде розмір і як це виглядатиме на руці</b>. Зараз на це відповідають калькулятор розміру, фото на руці й відгуки з фотографіями — але приміряти каблучку неможливо.</p><p>Саме через розмір люди пишуть у підтримку й роблять обміни.</p></div>
+      <div class="viz"><h4>Зараз на сторінці товару</h4><div class="row"><span>Калькулятор розміру</span><em class="ok">є ✓</em></div><div class="row"><span>Фото каблучки на руці</span><em class="ok">є ✓</em></div><div class="row"><span>Відео товару</span><em class="ok">є ✓</em></div><div class="row"><span>Примірка на своїй руці</span><em class="bad">немає</em></div></div>
+    </div>
+    <div class="tcol phonecol">
+      <div class="lbl"><span class="pill">Пропонуємо</span></div>
+      <div class="txt"><p><b>Примірка через камеру телефона</b> прямо на сторінці товару: людина наводить камеру на руку й бачить обрану каблучку у своєму кольорі та розмірі.</p></div>
+      <div class="phone live"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div>
+        <div class="view"><iframe class="liveframe" src="https://anyaserputko-dev.github.io/rinfit-try-on/" title="Rinfit — віртуальна примірка" allow="camera; accelerometer; gyroscope; xr-spatial-tracking" loading="lazy"></iframe></div>
+        <div class="url"><span>rinfit.com</span></div></div></div>
+      <div class="cap">Це живий прототип просто в документі. Оберіть каблучку, натисніть «Live try-on» і дозвольте камеру.</div>
+      <a class="livelink" href="https://anyaserputko-dev.github.io/rinfit-try-on/" target="_blank" rel="noopener">Відкрити на весь екран ↗</a>
+    </div>
+    <div class="tcol">
+      <div class="viz imgcard"><h4>Фото Rinfit · наша 3D-модель</h4><img src="img/tryon-compare.jpg" alt=""><div class="cap2">У кожній парі ліворуч — товарне фото rinfit.com, праворуч — наша модель тієї самої каблучки: ширина й товщина ободка, фактура, гравіювання, оправа.</div></div>
+      <div class="benefit-top" style="margin-top:18px"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
+      <div class="card"><p>Покупець приміряє каблучку до покупки — менше обмінів через розмір, більше часу на сторінці й готовий матеріал для TikTok, де в бренду вже є аудиторія.</p>
+        <div class="stats"><div><b>12 каблучок</b><span>уже змодельовано</span></div><div><b>на пристрої</b><span>камера нікуди не передається</span></div></div></div>
+      <div class="ptag"><span>Вартість</span><b>Окремо</b><em>обсяг і ціну узгоджуємо після демо</em></div>
+    </div>
   </div>
 </section>
 <!-- ============ GOOD ============ -->
@@ -931,12 +1105,12 @@ a.irow:hover b{text-decoration:underline}
       <div class="sum">$4,720</div>
       <p>Фіксована ставка $40/год · 118 годин роботи. Ціна кожної роботи — на її слайді.</p>
       <div class="terms"><span>Критичні — $1,800</span><span>Середні — $1,840</span><span>Дрібні — $1,080</span></div>
-      <p class="pnote">Порядок: спершу критичні — це швидкість і перше враження, далі середні, потім дрібні.</p>
+      <p class="pnote">Порядок: спершу критичні, далі середні, потім дрібні. Кожну роботу розписано на її слайді.</p>
     </div>
     <div class="pbox alt">
       <span class="pill">Окремо: примірка каблучки</span>
       <div class="sum">Демо</div>
-      <p>Примірка через камеру прямо на сторінці товару. Прототип із 12 змодельованими каблучками вже працює — обсяг і вартість узгоджуємо після демонстрації.</p>
+      <p>Примірка через камеру прямо на сторінці товару. Прототип із 12 змодельованими каблучками вбудований у цей документ — його можна спробувати на слайді 30. Обсяг і вартість узгоджуємо після демонстрації.</p>
       <div class="terms"><span>12 каблучок змодельовано</span><span>Працює на пристрої покупця</span></div>
     </div>
     </div>
