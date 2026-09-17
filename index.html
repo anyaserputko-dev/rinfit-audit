@@ -339,6 +339,39 @@ a.irow:hover b{text-decoration:underline}
 .bincl li{display:flex;gap:10px;font-size:14px;padding:6px 0;border-bottom:1px solid #eee;color:#333}
 .bincl li::before{content:"✓";color:var(--green);font-weight:800;flex:none}
 
+/* ---------- MAIL: приклад листа про покинутий кошик ---------- */
+.mock.mail{background:#fff;color:#202124;font-size:5.9cqw}
+.ml-bar{display:flex;align-items:center;gap:.7em;padding:.7em .9em;border-bottom:1px solid #e8eaed;background:#fff;flex:none}
+.ml-bar .bk{font-size:1em;color:#5f6368}
+.ml-bar .ib{font-size:.64em;color:#5f6368;letter-spacing:.02em}
+.ml-sub{padding:.8em .9em .55em;flex:none}
+.ml-sub b{display:block;font-size:.84em;font-weight:600;line-height:1.3}
+.ml-from{display:flex;align-items:center;gap:.6em;padding:0 .9em .75em;border-bottom:1px solid #e8eaed;flex:none}
+.ml-av{width:2.1em;height:2.1em;border-radius:50%;background:#373a36;color:#fff;font-size:.64em;display:flex;align-items:center;justify-content:center;font-weight:700;letter-spacing:.06em;flex:none}
+.ml-from .who{flex:1;min-width:0}
+.ml-from .who b{display:block;font-size:.66em;font-weight:600}
+.ml-from .who span{display:block;font-size:.58em;color:#5f6368}
+.ml-from .tm{font-size:.56em;color:#5f6368;white-space:nowrap}
+.ml-body{flex:1;overflow:hidden;background:#f7f4f2;padding:.9em .8em}
+.ml-card{background:#fff;border-radius:.5em;overflow:hidden}
+.ml-logo{text-align:center;font-weight:700;letter-spacing:.24em;font-size:.72em;padding:.9em 0 .7em;border-bottom:1px solid #f0ece9}
+.ml-head{text-align:center;padding:1em .9em .2em}
+.ml-head b{display:block;font-size:.92em;font-weight:600;line-height:1.25;margin-bottom:.35em}
+.ml-head span{display:block;font-size:.6em;color:#6b6e69;line-height:1.4}
+.ml-item{display:flex;gap:.75em;align-items:center;padding:.9em}
+.ml-item i{width:4.2em;height:4.2em;border-radius:.4em;background:#f2eeeb center/cover no-repeat;flex:none}
+.ml-item div{min-width:0}
+.ml-item b{display:block;font-size:.62em;font-weight:600;line-height:1.3;margin-bottom:.25em}
+.ml-item span{display:block;font-size:.56em;color:#6b6e69}
+.ml-item em{display:block;font-size:.7em;font-weight:700;font-style:normal;margin-top:.3em}
+.ml-cta{margin:0 .9em .9em;background:#373a36;color:#fff;text-align:center;border-radius:.35em;padding:.85em;font-size:.68em;font-weight:700;letter-spacing:.04em}
+.ml-fine{text-align:center;font-size:.54em;color:#8a8d88;padding:0 .9em .9em;line-height:1.5}
+.ml-sep{height:1px;background:#f0ece9;margin:0 .9em}
+.ml-perks{display:flex;gap:.5em;padding:.9em}
+.ml-perks span{flex:1;text-align:center;font-size:.5em;color:#6b6e69;line-height:1.35;letter-spacing:.04em}
+.ml-perks span b{display:block;font-size:1.5em;color:#373a36;margin-bottom:.25em;font-weight:600}
+.ml-foot{text-align:center;font-size:.5em;color:#a3a6a1;padding:.9em .9em 0;line-height:1.6}
+
 /* ---------- RINFIT: light mocks in the store style ---------- */
 .sev.low{background:#EEF2F7;color:#33608F;border:1.5px solid #6E9AC4}
 .mock.rf{background:#fff;color:#373a36}
@@ -487,9 +520,22 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">01</span><h2><span class="sev crit">Критично</span>Немає платформи для листів після покупки</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>У коді магазину ми знайшли <b>лише Privy</b> — це інструмент спливаючих вікон, а не система листів. Ні Klaviyo, ні Omnisend, ні Attentive, ні Shopify Email.</p><p>Тобто найприбутковіші автоматичні листи майже напевно не працюють: покинутий кошик, покинутий перегляд, прохання про відгук, повернення клієнта.</p><p class="fine-note">Це висновок із коду сторінки — повністю підтвердити можна лише з доступом до кабінету.</p></div>
-    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt="Блок збору email у футері"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Тут збирається email — і на цьому все</div></div>
+    <div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-popup.jpg" alt="Вікно збору email на головній"></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Email збирають — і на цьому все</div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Підключити <b>Klaviyo</b> (або рівноцінний сервіс) і зібрати 4 базові ланцюжки: покинутий кошик, покинутий перегляд, відгук після доставки, повернення клієнта.</p></div>
-    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-footer2.jpg" alt=""><div class="ovl" style="top:26cqw"><b class="t">Листи після покупки — автоматично</b><span class="s">Покинутий кошик · покинутий перегляд · відгук · повернення клієнта</span><div class="ovl-mini"><i style="background-image:url(img/rv1.jpg)"></i><div><b>Lauren T.</b><span>прохання про відгук через 7 днів</span></div></div><div class="ovl-mini"><i style="background-image:url(img/rv2.jpg)"></i><div><b>Kastery B.</b><span>покинутий кошик — лист за годину</span></div></div></div></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Так виглядатиме сторінка</div></div>
+    <div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><div class="mock mail"><div class="ml-bar"><span class="bk">&#8592;</span><span class="ib">Inbox</span></div>
+<div class="ml-sub"><b>Still thinking about it?</b></div>
+<div class="ml-from"><span class="ml-av">R</span><div class="who"><b>Rinfit</b><span>to me &#9662;</span></div><span class="tm">1 год тому</span></div>
+<div class="ml-body"><div class="ml-card">
+  <div class="ml-logo">RINFIT</div>
+  <div class="ml-head"><b>You left something behind</b><span>Ваша каблучка ще у кошику. Тримаємо її за вами.</span></div>
+  <div class="ml-item"><i style="background-image:url(img/pr1.jpg)"></i><div><b>Silicone Ring &#8211; 10&#215;8 mm Emerald Cut CZ</b><span>Nude and Rose Gold &#183; Size 6</span><em>$49.99</em></div></div>
+  <div class="ml-cta">COMPLETE MY ORDER</div>
+  <div class="ml-fine">Додайте ще $30.01 &#8212; і доставка безкоштовна</div>
+  <div class="ml-sep"></div>
+  <div class="ml-perks"><span><b>&#8734;</b>LIFETIME<br>WARRANTY</span><span><b>&#8644;</b>FREE SIZE<br>EXCHANGE</span><span><b>&#9733;</b>745<br>REVIEWS</span></div>
+</div>
+<div class="ml-foot">Ви отримали цей лист, бо залишили товар у кошику на rinfit.com<br>Unsubscribe &#183; 8 Edgewater Dr E, Falmouth, MA</div>
+</div></div></div><div class="url"><span>Пошта</span></div></div></div><div class="cap">Такий лист прийде за годину після покинутого кошика</div></div>
     <div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>Магазин, де каблучки купують парами й по кілька кольорів, нарешті повертає покупця сам — листом, а не новим рекламним кліком.</p><div class="stats"><div><b>4 ланцюжки</b><span>яких зараз немає</span></div><div><b>1M+</b><span>проданих каблучок — база для листів</span></div></div></div><div class="ptag"><span>Вартість</span><b>$560</b><em>14 год роботи · $40/год</em></div></div>
   </div>
