@@ -430,24 +430,6 @@ a.irow:hover b{text-decoration:underline}
 .liveframe{width:100%;height:100%;border:0;display:block;background:#e9e4e1}
 .livelink{display:block;text-align:center;margin-top:10px;font:700 12px/1 'Montserrat',sans-serif;letter-spacing:.04em;color:#262626;border:1.5px solid #4a4a4a;border-radius:30px;padding:10px 14px;text-decoration:none;background:rgba(255,255,255,.6)}
 .livelink:hover{background:#fff}
-/* slide 08 — the two try-on improvements after the first demo */
-.tryon-upd{margin-top:34px;padding-top:26px;border-top:1px solid #d6d0ca}
-.tryon-upd .uhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
-.tryon-upd .uhead h3{margin:0;font:800 20px/1.2 'Montserrat',sans-serif;color:#1f1f1f}
-.upd-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.upd{background:#fff;border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.1);padding:18px 18px 16px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:start}
-.upd .ushot{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:radial-gradient(120% 90% at 50% 20%,#6a6560,#2d2b29 72%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:10px;color:#fff}
-.upd .ushot svg{width:58%;height:auto;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
-.upd .ushot .gpill{background:rgba(17,17,17,.84);border-radius:10px;padding:5px 7px;font:500 7.6px/1.35 'Open Sans',sans-serif;text-align:center;white-space:pre-line}
-.upd h4{margin:0 0 7px;font:800 14px/1.25 'Montserrat',sans-serif;color:#1f1f1f}
-.upd h4 i{font-style:normal;color:#8a5a44;margin-right:6px}
-.upd ul{margin:0 0 10px;padding-left:16px;font-size:12.5px;line-height:1.45;color:#333}
-.upd li{margin-bottom:4px}
-.upd .res{font-size:12.5px;line-height:1.4;color:#1f5f3b;background:#E7F3EC;border:1px solid #2E8B57;border-radius:8px;padding:7px 10px}
-.upd .res b{font-family:'Montserrat',sans-serif}
-.tryon-upd .fine-note{margin:16px 0 0;font-size:12px;color:var(--soft);line-height:1.45}
-@media (max-width:900px){.upd-grid{grid-template-columns:1fr}}
-@media (max-width:520px){.upd{grid-template-columns:1fr}.upd .ushot{max-width:200px;margin:0 auto;width:100%}}
 
 @media (max-width:1100px){.tryon-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.phonecol{grid-column:1 / -1}}
 @media (max-width:640px){.tryon-grid{grid-template-columns:minmax(0,1fr)}}
@@ -1302,7 +1284,7 @@ a.irow:hover b{text-decoration:underline}
       <div class="phone live"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div>
         <div class="view"><iframe class="liveframe" src="https://anyaserputko-dev.github.io/rinfit-try-on/" title="Rinfit — virtual ring try-on" allow="camera; accelerometer; gyroscope; xr-spatial-tracking" loading="lazy"></iframe></div>
         <div class="url"><span>rinfit.com</span></div></div></div>
-      <div class="cap">This is a working prototype, live inside this document. Pick a ring, tap "Live try-on" and allow the camera — the hand outline shows how to hold the hand, and the ring sizes itself to your finger.</div>
+      <div class="cap">This is a working prototype, live inside this document. Pick a ring, tap "Live try-on" and allow the camera.</div>
       <a class="livelink" href="https://anyaserputko-dev.github.io/rinfit-try-on/" target="_blank" rel="noopener">Open full screen ↗</a>
     </div>
     <div class="tcol">
@@ -1311,40 +1293,6 @@ a.irow:hover b{text-decoration:underline}
         <div class="stats"><div><b>9 rings</b><span>already modeled</span></div><div><b>on-device</b><span>the camera feed never leaves the phone</span></div></div></div>
       <div class="ptag"><span>Price</span><b>Separate</b><em>scope and price agreed after the demo</em></div>
     </div>
-  </div>
-  <div class="tryon-upd">
-    <div class="uhead"><span class="pill">Update</span><h3>Two improvements to the try-on after the first demo</h3></div>
-    <div class="upd-grid">
-      <div class="upd">
-        <div class="ushot"><svg viewBox="0 0 200 270" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke-dasharray="9 7" d="M66 262V178L24 132a12 12 0 0 1 16-16l26 34V52a12 12 0 0 1 24 0v80h6V30a12 12 0 0 1 24 0v102h6V44a12 12 0 0 1 24 0v92h6V76a10 10 0 0 1 20 0v186"/><ellipse cx="138" cy="112" rx="15" ry="6" stroke="#deae4a" stroke-width="4.5"/></svg><div class="gpill">Show your left or right hand to the camera.
-Keep your fingers pointing up.</div></div>
-        <div>
-          <h4><i>01</i>A hand guide in the camera view</h4>
-          <ul>
-            <li>Until a hand is found, an outline in the camera view shows how to hold it, with the line <b>“Show your left or right hand to the camera. Keep your fingers pointing up.”</b></li>
-            <li>Either hand is recognised.</li>
-            <li>Fingers pointing down: the ring is taken off and the view says <b>“Turn your hand so your fingers point up to try the ring on.”</b></li>
-            <li>The same happens whenever the hand cannot carry the ring properly (palm side, folded finger, too far away). The try-on resumes by itself once the hand is right.</li>
-          </ul>
-          <div class="res"><b>Result:</b> the shopper understands the try-on at once, and the ring never slides about on a badly held hand.</div>
-        </div>
-      </div>
-      <div class="upd">
-        <div class="ushot"><svg viewBox="0 0 120 170" fill="none" aria-hidden="true"><defs><linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient></defs><rect x="40" y="-10" width="40" height="190" rx="20" fill="#d8b49b"/><rect x="40" y="-10" width="40" height="190" rx="20" fill="url(#shade)"/><g stroke="#ff2d55" stroke-width="1.6"><path d="M36 62h48M36 72h48M36 82h48M36 92h48M36 102h48" stroke-dasharray="3 3" opacity=".8"/><path d="M40 56v52M80 56v52"/></g><path d="M40 40H80M40 36v8M80 36v8" stroke="#fff" stroke-width="2"/><ellipse cx="60" cy="118" rx="20.5" ry="6.5" stroke="#fff" stroke-width="4.5"/><ellipse cx="60" cy="118" rx="20.5" ry="6.5" stroke="#e6e1dd" stroke-width="2"/></svg><div class="gpill">Finger width read from the picture
-→ ring scaled to it</div></div>
-        <div>
-          <h4><i>02</i>The ring sizes itself to the finger</h4>
-          <ul>
-            <li>The −/+ percentage control is gone.</li>
-            <li>The visible width of the finger is read from the picture on five cuts across it, and the 3D ring is scaled to that width.</li>
-            <li>Position, angle and size follow the hand as it moves and changes distance to the camera, smoothed so the ring neither jumps nor lags.</li>
-            <li>When the finger is too small or unclear in the frame, the shopper is asked to bring the hand closer instead of being shown a wrong fit.</li>
-          </ul>
-          <div class="res"><b>Result:</b> the ring fits the finger in the frame with no manual adjustment.</div>
-        </div>
-      </div>
-    </div>
-    <p class="fine-note">This is a visual fit for the try-on. An exact ring size in jewellery terms still needs a separate calibration step — for example a bank card in the frame as a reference.</p>
   </div>
 </section>
 <!-- ============ GOOD ============ -->
