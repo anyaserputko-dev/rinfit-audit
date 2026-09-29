@@ -1164,6 +1164,12 @@ a.irow:hover b{text-decoration:underline}
   text-transform:uppercase;color:#8A4A28;background:#F7E7E2;border:1px solid #E3CDC5;border-radius:30px;padding:6px 11px;margin-top:9px}
 .livetag i{width:7px;height:7px;border-radius:50%;background:#C0392B;animation:livePulse 1.4s ease-in-out infinite}
 @keyframes livePulse{0%,100%{opacity:1}50%{opacity:.25}}
+.seo-card{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;align-items:center}
+.seo-card .lead{margin:0 0 22px}
+.seo-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.seolink{display:inline-block;font:800 14px/1 'Montserrat',sans-serif;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:#262626;border-radius:30px;padding:16px 26px;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.seolink:hover{background:#000}
+@media (max-width:900px){.seo-card{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -1181,6 +1187,7 @@ a.irow:hover b{text-decoration:underline}
     <a href="#critical">1 critical</a>
     <a href="#medium">3 medium</a>
     <a href="#low">3 minor</a>
+    <a href="#seo">SEO audit</a>
     <a href="#tryon">Ring try-on</a>
     <a href="#price">Pricing</a>
   </nav>
@@ -1266,6 +1273,16 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">07</span><h2><span class="sev low">Low priority</span>In “Rinfit Community” product thumbnails sit on different backgrounds</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Under every customer video sits a product card. Some thumbnails are <b>JPGs with white baked into the background</b>: on the gray card they land as a white rectangle.</p><p>The rest are PNGs with a transparent background and blend into the card. The cards sit one after another, so the difference shows immediately.</p><p class="fine-note">Checked 19.09.2026: 8 thumbnails in the rail — 2 JPG on white, 6 PNG transparent.</p></div><div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/n-community2-m.jpg" alt=""></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">A white plate under the ring — the next card has none</div></div><div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Re-upload the thumbnails with white backgrounds as <b>transparent PNGs</b> — so every ring sits on the card background the same way.</p><p>On the right — the same screen of your site with the thumbnail fixed.</p></div><div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/n-community-fix-m.jpg" alt=""></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Same screen: every ring with no background</div></div><div class="cardcol"><div class="benefit-top"><span class="pill">Why it pays</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div><div class="card"><p>A detail people notice subconsciously: an even row reads as a well-kept store, a mismatch reads as unfinished work. And “Community” is where Rinfit is strong — a wall of real customer videos.</p><div class="stats"><div><b>2 of 8</b><span>thumbnails are JPG on white</span></div><div><b>1 format</b><span>PNG — should be on all of them</span></div></div></div><div class="ptag"><span>Price</span><b>$30</b><em>1 h &#183; $30/h</em></div></div>
+  </div>
+</section>
+
+<!-- ============ SEO AUDIT LINK ============ -->
+<section class="slide" id="seo">
+  <img class="silk sm" src="img/silk.png" alt="">
+  <div class="shead"><h2><span class="sev extra">Separate audit</span>Technical SEO &amp; AI search audit</h2></div>
+  <div class="seo-card">
+    <div><p class="lead">How Google and AI assistants read rinfit.com: speed on phone and desktop, structured data, images, links, AI-agent access. <b>All 227 pages</b> checked, every task with its own time and budget.</p><a class="seolink" href="https://anyaserputko-dev.github.io/rinfit-seo-audit/" target="_blank" rel="noopener">Open the SEO audit ↗</a></div>
+    <div class="seo-facts"><div class="kpi"><b>227</b><span>Pages checked</span></div><div class="kpi"><b>28</b><span>Tasks</span></div></div>
   </div>
 </section>
 

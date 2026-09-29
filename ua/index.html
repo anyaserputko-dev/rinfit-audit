@@ -1167,6 +1167,12 @@ a.irow:hover b{text-decoration:underline}
   text-transform:uppercase;color:#8A4A28;background:#F7E7E2;border:1px solid #E3CDC5;border-radius:30px;padding:6px 11px;margin-top:9px}
 .livetag i{width:7px;height:7px;border-radius:50%;background:#C0392B;animation:livePulse 1.4s ease-in-out infinite}
 @keyframes livePulse{0%,100%{opacity:1}50%{opacity:.25}}
+.seo-card{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;align-items:center}
+.seo-card .lead{margin:0 0 22px}
+.seo-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.seolink{display:inline-block;font:800 14px/1 'Montserrat',sans-serif;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:#262626;border-radius:30px;padding:16px 26px;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.seolink:hover{background:#000}
+@media (max-width:900px){.seo-card{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -1185,6 +1191,7 @@ a.irow:hover b{text-decoration:underline}
     <a href="#critical">1 критична</a>
     <a href="#medium">3 середні</a>
     <a href="#low">3 дрібні</a>
+    <a href="#seo">SEO-аудит</a>
     <a href="#tryon">Примірка каблучки</a>
     <a href="#price">Вартість</a>
   </nav>
@@ -1270,6 +1277,16 @@ a.irow:hover b{text-decoration:underline}
   <div class="shead"><span class="num">07</span><h2><span class="sev low">Низький пріоритет</span>У «Rinfit Community» мініатюри товарів на різних тлах</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Зараз</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Під кожним відео покупця стоїть картка товару. Частина мініатюр — <b>JPG із зашитим білим тлом</b>: на сірій картці вони лягають білим прямокутником.</p><p>Решта — PNG із прозорим тлом, вони з карткою зливаються. Картки йдуть одна за одною, тож різниця помітна одразу.</p><p class="fine-note">Перевірено 19.09.2026: у стрічці 8 мініатюр — 2 у JPG з білим тлом, 6 у PNG із прозорим.</p></div><div class="v1"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="../img/n-community2-m.jpg" alt=""></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Біла плашка під каблучкою — у сусідній картці її немає</div></div><div class="txt t2"><div class="lbl"><span class="pill">Пропонуємо</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Перезалити мініатюри з білим тлом у <b>PNG із прозорим</b> — щоб усі каблучки лежали на тлі картки однаково.</p><p>Праворуч — той самий екран сайту з виправленою мініатюрою.</p></div><div class="v2"><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="../img/n-community-fix-m.jpg" alt=""></div><div class="url"><span>rinfit.com</span></div></div></div><div class="cap">Той самий екран: усі каблучки без тла</div></div><div class="cardcol"><div class="benefit-top"><span class="pill">Користь</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div><div class="card"><p>Дрібниця, яку помічають підсвідомо: рівний ряд читається як доглянутий магазин, різнобій — як недоробка. А «Community» — це те, чим Rinfit сильний: стіна живих відео покупців.</p><div class="stats"><div><b>2 з 8</b><span>мініатюр — JPG із білим тлом</span></div><div><b>1 формат</b><span>PNG — має бути на всіх</span></div></div></div><div class="ptag"><span>Вартість</span><b>$30</b><em>1 год роботи &#183; $30/год</em></div></div>
+  </div>
+</section>
+
+<!-- ============ SEO AUDIT LINK ============ -->
+<section class="slide" id="seo">
+  <img class="silk sm" src="../img/silk.png" alt="">
+  <div class="shead"><h2><span class="sev extra">Окремий аудит</span>Технічний SEO та AI-пошук</h2></div>
+  <div class="seo-card">
+    <div><p class="lead">Як rinfit.com читають Google та AI-асистенти: швидкість на телефоні й десктопі, структуровані дані, зображення, посилання, доступ AI-агентів. Перевірено <b>всі 227 сторінок</b>, кожна задача з часом і бюджетом. Аудит англійською.</p><a class="seolink" href="https://anyaserputko-dev.github.io/rinfit-seo-audit/" target="_blank" rel="noopener">Відкрити SEO-аудит ↗</a></div>
+    <div class="seo-facts"><div class="kpi"><b>227</b><span>Сторінок перевірено</span></div><div class="kpi"><b>28</b><span>Задач</span></div></div>
   </div>
 </section>
 
